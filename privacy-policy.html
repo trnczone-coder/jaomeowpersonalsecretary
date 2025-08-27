@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>นโยบายความเป็นส่วนตัว | บอทเลขาส่วนตัว</title>
+  <meta name="description" content="นโยบายความเป็นส่วนตัวสำหรับบริการบอทเลขาส่วนตัว อธิบายการเก็บ ใช้ เปิดเผย และคุ้มครองข้อมูลส่วนบุคคล ตามกฎหมาย PDPA ของไทย">
+  <meta property="og:title" content="นโยบายความเป็นส่วนตัว | บอทเลขาส่วนตัว">
+  <meta property="og:description" content="นโยบายความเป็นส่วนตัวสำหรับบริการบอทเลขาส่วนตัว ตามกฎหมาย PDPA ของไทย">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta name="theme-color" content="#f472b6">
+  <style>
+    :root{
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #ec4899;
+      --primary-weak: #fbcfe8;
+      --border: #e5e7eb;
+      --radius: 16px;
+    }
+    *{box-sizing:border-box}
+    html, body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Noto Sans Thai, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height:1.65}
+    a{color:var(--primary); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width: 860px; margin: 48px auto; padding: 0 20px}
+    header{background: linear-gradient(180deg, #fff, #fff0); padding: 12px 0 28px}
+    .card{background:var(--card); border:1px solid var(--border); border-radius: var(--radius); box-shadow: 0 10px 25px rgba(0,0,0,.05)}
+    .hero{padding: 28px 28px 22px}
+    .badge{display:inline-block; padding: 4px 10px; border-radius:999px; background: var(--primary-weak); color: var(--primary); font-weight:600; font-size:13px; letter-spacing:.2px}
+    h1{font-size: clamp(26px, 3.6vw, 36px); margin: 10px 0 8px}
+    .meta{color:var(--muted); font-size:14px}
+    .actions{margin-top: 12px; display:flex; gap: 10px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:#fff; cursor:pointer; font-weight:600}
+    .btn.primary{background: var(--primary); color:#fff; border-color: transparent}
+    main{padding: 6px 0 28px}
+    .toc{padding: 18px 22px; border-top:1px solid var(--border); border-bottom:1px solid var(--border); background: #fff; border-radius: 0 0 var(--radius) var(--radius)}
+    .toc h2{margin: 0 0 8px; font-size: 18px}
+    .toc ol{margin: 0; padding-left: 18px}
+    section{margin-top: 22px; padding: 18px 24px; background:#fff; border:1px solid var(--border); border-radius: var(--radius)}
+    section h3{margin-top:0}
+    .note{background:#f9fafb; border-left:4px solid var(--primary); padding:10px 12px; color:#374151; border-radius:8px}
+    footer{color:var(--muted); font-size: 13px; text-align:center; padding: 24px 0 48px}
+    code{background:#f3f4f6; padding:2px 6px; border-radius:6px}
+    @media print {
+      .actions, .toc {display:none}
+      body{background:#fff}
+      section{page-break-inside: avoid}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="card hero">
+        <span class="badge">Privacy Policy · PDPA</span>
+        <h1>นโยบายความเป็นส่วนตัว</h1>
+        <p class="meta">
+          สำหรับบริการบอทเลขาส่วนตัว (“บริการ”) โดย <span id="orgName">[ใส่ชื่อผู้ให้บริการ]</span><br>
+          เวอร์ชัน <span id="version">1.0</span> · ปรับปรุงล่าสุด: <span id="lastUpdated">27 สิงหาคม 2568</span>
+        </p>
+        <div class="actions">
+          <button class="btn primary" onclick="window.print()">พิมพ์ / บันทึก PDF</button>
+          <a class="btn" href="#contact" title="ติดต่อผู้ควบคุมข้อมูล">ติดต่อผู้ควบคุมข้อมูล</a>
+          <a class="btn" href="#rights" title="สิทธิของเจ้าของข้อมูล">ดูสิทธิของฉัน</a>
+        </div>
+      </div>
+      <div class="toc card">
+        <h2>สารบัญ</h2>
+        <ol>
+          <li><a href="#intro">บทนำและขอบเขต</a></li>
+          <li><a href="#collect">ข้อมูลที่เก็บรวบรวม</a></li>
+          <li><a href="#source">แหล่งที่มาของข้อมูล</a></li>
+          <li><a href="#purpose">วัตถุประสงค์ในการประมวลผล</a></li>
+          <li><a href="#legal">ฐานทางกฎหมาย</a></li>
+          <li><a href="#cookies">คุกกี้และเทคโนโลยีติดตาม</a></li>
+          <li><a href="#share">การเปิดเผย/โอนข้อมูลแก่บุคคลที่สาม</a></li>
+          <li><a href="#xborder">การโอนข้อมูลไปต่างประเทศ</a></li>
+          <li><a href="#security">การเก็บรักษาและความปลอดภัย</a></li>
+          <li><a href="#rights">สิทธิของเจ้าของข้อมูล</a></li>
+          <li><a href="#disclaimer">ข้อจำกัดความรับผิดและความรับผิดชอบของผู้ใช้</a></li>
+          <li><a href="#changes">การแก้ไขนโยบาย</a></li>
+          <li><a href="#contact">ช่องทางติดต่อ</a></li>
+        </ol>
+      </div>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h3>1) บทนำและขอบเขต</h3>
+        <p>
+          <strong><span class="orgName">[ใส่ชื่อผู้ให้บริการ]</span></strong> (“ผู้ให้บริการ”) เคารพสิทธิความเป็นส่วนตัวของผู้ใช้บริการทุกท่าน (“ผู้ใช้”) 
+          และมุ่งมั่นปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลที่บังคับใช้ รวมถึงพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA) 
+          นโยบายฉบับนี้อธิบายการเก็บ ใช้ เปิดเผย โอน และปกป้องข้อมูลส่วนบุคคลที่เกี่ยวข้องกับบริการบอทเลขาส่วนตัวของเรา
+        </p>
+        <p class="note">
+          หมายเหตุ: หากผู้ใช้เชื่อมต่อบริการกับแพลตฟอร์มของบุคคลที่สาม (เช่น LINE, Google Calendar ฯลฯ) 
+          การประมวลผลข้อมูลส่วนบุคคลอาจอยู่ภายใต้นโยบายของแพลตฟอร์มนั้น ๆ ด้วย
+        </p>
+      </section>
+
+      <section id="collect">
+        <h3>2) ข้อมูลที่เก็บรวบรวม</h3>
+        <ul>
+          <li><strong>ข้อมูลที่ผู้ใช้ให้โดยตรง:</strong> ชื่อ-นามสกุล/ชื่อเล่น, เบอร์โทรศัพท์, อีเมล, ช่องทางติดต่อ, ข้อมูลนัดหมาย/ตารางเวลา, คำสั่ง/ข้อความแชท, ไฟล์แนบที่ผู้ใช้ส่งให้</li>
+          <li><strong>ข้อมูลทางเทคนิคและการใช้งาน:</strong> วันที่และเวลาใช้งาน, ประเภทคำสั่ง/ฟังก์ชันที่ใช้, ข้อมูลอุปกรณ์เบื้องต้น (เช่น ประเภทเบราว์เซอร์) ตามที่ระบบจำเป็นต้องใช้เพื่อให้บริการ</li>
+          <li><strong>ข้อมูลที่ได้จากการตั้งค่าโดยผู้ใช้:</strong> การอนุญาตเข้าถึงปฏิทิน/สมุดรายชื่อ/บริการแจ้งเตือน (ถ้ามี)</li>
+        </ul>
+      </section>
+
+      <section id="source">
+        <h3>3) แหล่งที่มาของข้อมูล</h3>
+        <p>
+          เราได้รับข้อมูลจาก (ก) ผู้ใช้ให้ข้อมูลโดยตรงผ่านการสนทนา/แบบฟอร์ม (ข) การซิงก์จากบริการของบุคคลที่สามเมื่อผู้ใช้เชื่อมต่ออย่างมีเจตนา 
+          และ (ค) การบันทึกเหตุการณ์การใช้งานที่จำเป็นเพื่อให้บริการทำงานได้อย่างถูกต้องและปลอดภัย
+        </p>
+      </section>
+
+      <section id="purpose">
+        <h3>4) วัตถุประสงค์ในการประมวลผล</h3>
+        <ul>
+          <li>ให้บริการแจ้งเตือน นัดหมาย จัดตาราง ติดต่อประสานงาน และฟังก์ชันเลขาส่วนตัวตามคำสั่งของผู้ใช้</li>
+          <li>สื่อสาร แจ้งเตือน และตอบกลับคำถามเกี่ยวกับการใช้งาน</li>
+          <li>ปรับปรุงคุณภาพบริการ วิเคราะห์ประสิทธิภาพ และแก้ไขปัญหาเชิงเทคนิค</li>
+          <li>ปฏิบัติตามกฎหมาย ความปลอดภัย การตรวจสอบ และการใช้สิทธิเรียกร้องตามสมควร</li>
+        </ul>
+      </section>
+
+      <section id="legal">
+        <h3>5) ฐานทางกฎหมาย</h3>
+        <p>
+          เราประมวลผลข้อมูลส่วนบุคคลภายใต้ฐานทางกฎหมายที่เหมาะสม ได้แก่ ความยินยอมของผู้ใช้ การปฏิบัติตามสัญญา 
+          ผลประโยชน์โดยชอบด้วยกฎหมายของผู้ให้บริการ ความจำเป็นตามกฎหมาย หรือการปกป้องประโยชน์สำคัญของบุคคล
+        </p>
+      </section>
+
+      <section id="cookies">
+        <h3>6) คุกกี้และเทคโนโลยีติดตาม</h3>
+        <p>
+          บริการอาจใช้คุกกี้หรือเทคโนโลยีที่คล้ายกันเพื่อจดจำการตั้งค่าและปรับปรุงประสบการณ์การใช้งาน 
+          ผู้ใช้สามารถกำหนดค่าบราว์เซอร์เพื่อปฏิเสธคุกกี้ได้ แต่อาจทำให้บางฟังก์ชันทำงานได้ไม่สมบูรณ์
+        </p>
+      </section>
+
+      <section id="share">
+        <h3>7) การเปิดเผย/โอนข้อมูลแก่บุคคลที่สาม</h3>
+        <p>เราไม่ขายข้อมูลส่วนบุคคล และจะเปิดเผยข้อมูลเฉพาะเมื่อจำเป็นดังนี้:</p>
+        <ul>
+          <li>เมื่อได้รับความยินยอมจากผู้ใช้</li>
+          <li>ผู้ประมวลผลข้อมูล/ผู้ให้บริการทางเทคนิคที่จำเป็นต่อการให้บริการ ภายใต้สัญญาคุ้มครองข้อมูล</li>
+          <li>เมื่อกฎหมายบังคับหรือมีคำสั่งจากหน่วยงานของรัฐที่ชอบด้วยกฎหมาย</li>
+        </ul>
+      </section>
+
+      <section id="xborder">
+        <h3>8) การโอนข้อมูลไปต่างประเทศ</h3>
+        <p>
+          หากมีการโอนข้อมูลไปต่างประเทศ เราจะดำเนินการตามมาตรการที่กฎหมายกำหนดเพื่อให้มั่นใจว่ามีระดับการคุ้มครองที่เหมาะสม
+        </p>
+      </section>
+
+      <section id="security">
+        <h3>9) การเก็บรักษาและความปลอดภัย</h3>
+        <ul>
+          <li>เก็บรักษาข้อมูลเท่าที่จำเป็นตามวัตถุประสงค์และข้อกำหนดทางกฎหมาย</li>
+          <li>ใช้มาตรการด้านเทคนิคและองค์กรที่เหมาะสมเพื่อป้องกันการเข้าถึง แก้ไข เปิดเผย หรือทำลายข้อมูลโดยไม่ได้รับอนุญาต</li>
+          <li>เมื่อไม่จำเป็นต้องใช้ข้อมูล เราจะลบหรือทำให้ข้อมูลไม่สามารถระบุตัวบุคคลได้</li>
+        </ul>
+      </section>
+
+      <section id="rights">
+        <h3>10) สิทธิของเจ้าของข้อมูล</h3>
+        <p>ผู้ใช้มีสิทธิภายใต้กฎหมายที่บังคับใช้ รวมถึงสิทธิ:</p>
+        <ul>
+          <li>ขอเข้าถึงและรับสำเนาข้อมูลส่วนบุคคล</li>
+          <li>ขอให้แก้ไขข้อมูลที่ไม่ถูกต้อง/ไม่สมบูรณ์</li>
+          <li>ขอให้ลบ ระงับ หรือจำกัดการประมวลผลข้อมูลตามเงื่อนไขกฎหมาย</li>
+          <li>คัดค้านการประมวลผลในบางกรณี</li>
+          <li>ถอนความยินยอม (หากฐานคือความยินยอม)</li>
+          <li>ร้องเรียนต่อหน่วยงานกำกับดูแลที่มีอำนาจ</li>
+        </ul>
+        <p>ในการใช้สิทธิ โปรดติดต่อเราได้ตามช่องทางในหัวข้อ “ช่องทางติดต่อ” ด้านล่าง</p>
+      </section>
+
+      <section id="disclaimer">
+        <h3>11) ข้อจำกัดความรับผิดและความรับผิดชอบของผู้ใช้</h3>
+        <ul>
+          <li>ผู้ใช้มีหน้าที่ให้ข้อมูลที่ถูกต้อง เป็นปัจจุบัน และไม่ละเมิดสิทธิของผู้อื่น</li>
+          <li>ผู้ให้บริการไม่รับผิดชอบต่อความเสียหายที่เกิดจากการเปิดเผยข้อมูลโดยผู้ใช้เอง การใช้งานที่ขัดต่อข้อกำหนด หรือเหตุสุดวิสัยที่ไม่อาจควบคุมได้</li>
+          <li>หากผู้ใช้เชื่อมต่อกับบริการภายนอก ผู้ใช้ควรทบทวนนโยบายของผู้ให้บริการภายนอกดังกล่าว</li>
+        </ul>
+      </section>
+
+      <section id="changes">
+        <h3>12) การแก้ไขนโยบาย</h3>
+        <p>
+          เราอาจปรับปรุงนโยบายนี้เป็นครั้งคราว เมื่อมีการเปลี่ยนแปลงสำคัญ เราจะแจ้งให้ผู้ใช้ทราบผ่านช่องทางที่เหมาะสม 
+          โดยนโยบายที่แก้ไขจะมีผลเมื่อเผยแพร่บนหน้านี้ เวอร์ชันปัจจุบันแสดงไว้ด้านบน
+        </p>
+      </section>
+
+      <section id="contact">
+        <h3>13) ช่องทางติดต่อ</h3>
+        <p>
+          ผู้ควบคุมข้อมูล: <strong><span class="orgName">[ใส่ชื่อผู้ให้บริการ]</span></strong><br>
+          อีเมล: <a id="orgEmail" href="mailto:your@email.com">[ใส่อีเมลสำหรับติดต่อ]</a><br>
+          โทรศัพท์: <span id="orgTel">[ใส่เบอร์โทรสำหรับติดต่อ]</span><br>
+          (ถ้ามี) เจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคล (DPO): <span id="dpo">[ระบุชื่อ/ช่องทางติดต่อ]</span>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> <span class="orgName">[ใส่ชื่อผู้ให้บริการ]</span>. สงวนลิขสิทธิ์ • เอกสารถูกจัดทำเพื่อให้สอดคล้องกับ PDPA ของไทย
+      <div style="margin-top:6px"><a href="#top">กลับขึ้นด้านบน</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // ---- Quick customization helpers (แก้ค่านี้ให้เป็นของคุณ) ----
+    const ORG_NAME = "[ใส่ชื่อผู้ให้บริการ]";
+    const ORG_EMAIL = "your@email.com";
+    const ORG_TEL = "[ใส่เบอร์โทร]";
+    const DPO = "[ชื่อ/ช่องทาง DPO ถ้ามี]";
+    const VERSION = "1.0";
+    const LAST_UPDATED_ISO = "2025-08-27"; // ปรับเป็นวันที่แก้ไขจริง
+
+    // Apply to page
+    document.querySelectorAll(".orgName").forEach(n => n.textContent = ORG_NAME);
+    document.getElementById("orgName").textContent = ORG_NAME;
+    document.getElementById("orgEmail").textContent = ORG_EMAIL;
+    document.getElementById("orgEmail").setAttribute("href", "mailto:" + ORG_EMAIL);
+    document.getElementById("orgTel").textContent = ORG_TEL;
+    document.getElementById("dpo").textContent = DPO;
+    document.getElementById("version").textContent = VERSION;
+
+    // Format Thai Buddhist date for display
+    try {
+      const date = new Date(LAST_UPDATED_ISO + "T00:00:00+07:00");
+      const th = new Intl.DateTimeFormat("th-TH-u-ca-buddhist", { dateStyle: "long" }).format(date);
+      document.getElementById("lastUpdated").textContent = th;
+    } catch (e) {
+      document.getElementById("lastUpdated").textContent = LAST_UPDATED_ISO;
+    }
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Structured data (schema.org) for PrivacyPolicy
+    const policyData = {
+      "@context": "https://schema.org",
+      "@type": "PrivacyPolicy",
+      "name": "นโยบายความเป็นส่วนตัว - บอทเลขาส่วนตัว",
+      "url": window.location.href,
+      "isPartOf": {"@type":"WebSite","name": ORG_NAME},
+      "publisher": {"@type":"Organization","name": ORG_NAME, "email": ORG_EMAIL, "telephone": ORG_TEL},
+      "dateModified": LAST_UPDATED_ISO
+    };
+    const sd = document.createElement("script");
+    sd.type = "application/ld+json";
+    sd.text = JSON.stringify(policyData);
+    document.head.appendChild(sd);
+  </script>
+</body>
+</html>
